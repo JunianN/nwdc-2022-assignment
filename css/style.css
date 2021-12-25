@@ -13,7 +13,7 @@
 
     --clr-light: rgb(255, 255, 255);
     --clr-dark: #000000;
-    --clr-accent: #838383;
+    --clr-accent: #cc3939;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -51,6 +51,11 @@ img {
 }
 
 strong { font-weight: var(--fw-bold);}
+
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
 
 h1,
 h2,
@@ -96,9 +101,9 @@ nav {
     position: relative;
 }
 
-.intro__img{
+/*.intro__img{
     box-shadow: var(--bs);
-}
+}*/
 
 .section__subtitle--intro {
     display: inline-block;
@@ -133,3 +138,53 @@ nav {
         width: calc(100% + 1.5em);
     }
 }
+
+.about-me {
+    
+}
+
+.my-motivations {
+    background-color: rgb(61, 61, 61);
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    color: var(--clr-light);
+    background-blend-mode: multiply;
+    text-align: center;
+}
+
+.section__title--motivations {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--motivations::after {
+    content: '';
+    display: block;
+    width: 5.5em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-dark);
+    opacity: 0.3;
+}
+
+.services {
+    margin-bottom: 2em;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*@media (min-width: 800px) {
+    .motivations {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .motivation + .motivation {
+        margin-left: 2em;
+    }
+}*/
+
