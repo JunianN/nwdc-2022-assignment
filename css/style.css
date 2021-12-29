@@ -5,8 +5,8 @@
 }
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Open Sans', sans-serif;
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -109,8 +109,8 @@ h3 {font-size: var(--fs-h3);}
 
 nav {
     position: fixed;
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-light);
     top: 0;
     right: 0;
     bottom: 0;
@@ -248,11 +248,11 @@ nav {
 }
 
 .my-motivations {
-    background-color: rgb(61, 61, 61);
+    /*background-color: rgb(61, 61, 61);
     background-image: url(../img/bg.jpg);
     background-size: cover;
     color: var(--clr-light);
-    background-blend-mode: multiply;
+    background-blend-mode: multiply;*/
     text-align: center;
 }
 
@@ -329,10 +329,13 @@ nav {
     }
 }
 
-.tech-stack {
+/*.tech-stack {
     background-color: rgb(61, 61, 61);
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
     color: var(--clr-light);
-}
+    background-blend-mode: multiply;
+}*/
 
 .section__title--tech,
 .section__subtitle--tech {
@@ -343,6 +346,14 @@ nav {
     color: var(--clr-accent);
     position: relative;
 }
+
+/*.expectation {
+    background-color: rgb(61, 61, 61);
+    background-image: url(../img/bg3.png);
+    background-size: cover;
+    color: var(--clr-light);
+    background-blend-mode: multiply;
+}*/
 
 .section__title--expectations {
     color: var(--clr-accent);
@@ -372,7 +383,7 @@ nav {
 .tech-stacks {
     display: flex;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 700px;
     flex-wrap: wrap;
 }
 
@@ -391,6 +402,7 @@ nav {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
+    background-color: rgb(34, 34, 34);
 }
 
 .footer a {
@@ -425,4 +437,9 @@ nav {
 
 .social-list__link {
     padding: .5em;
+}
+
+.note {
+    margin-bottom: 0;
+    font-size: 0.7rem;
 }
